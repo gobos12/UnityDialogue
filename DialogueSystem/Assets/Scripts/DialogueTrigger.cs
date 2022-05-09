@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Dialogue dialogue; //adding your own dialogue in-game
 
+    //triggers dialogue when you interact with gameobject
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
