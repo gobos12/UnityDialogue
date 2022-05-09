@@ -396,7 +396,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380230147}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &380230147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,9 +1592,14 @@ MonoBehaviour:
   dialogue:
     name: Orion
     sentences:
-    - First sentence
-    - Second Sentence
-    - Third Sentence
+    - type: 0
+      sentence: sdafd
+    - type: 0
+      sentence: asdffff
+    - type: 0
+      sentence: sdf
+    - type: 1
+      sentence: 111
 --- !u!1 &1910042582
 GameObject:
   m_ObjectHideFlags: 0

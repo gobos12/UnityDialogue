@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
 
     //actual dialogue & reponse buttons
+    private Queue[] dialoguearrays;
     private Queue<string> sentences;
     private Button[] buttons;
 
@@ -26,8 +27,10 @@ public class DialogueManager : MonoBehaviour
 
         sentences.Clear(); //clears any strings already in the queue
 
-        foreach(string s in d.sentences){
-            sentences.Enqueue(s);
+        foreach(Sentence s in d.sentences){
+            if(s.type == 0){
+                sentences.Enqueue(s.sentence);
+            }
         }
 
         DisplayNextSentence();
